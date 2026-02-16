@@ -14,6 +14,6 @@ SOURCE_NAME = ""
 #----------------------------------------------------
 # Calling API
 #----------------------------------------------------
-response = requests.get(API_URL, timeout = 30)
+response = requests.get(API_URL, timeout = 60)
 response.raise_for_status()
 api_data = response.json()
